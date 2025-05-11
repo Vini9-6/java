@@ -1,6 +1,6 @@
 # Java Básico
 
-Este repositório contém exercícios e exemplos desenvolvidos durante meus estudos de programação em Java. O objetivo é consolidar os principais conceitos da linguagem de forma prática, organizada e didática.
+Este repositório contém explicações e exemplos que estou **desenvolvendo** durante meus estudos de programação em Java. O objetivo é consolidar os principais conceitos da linguagem de forma prática, organizada e didática.
 
 ## 🚀 Tecnologias utilizadas
 
