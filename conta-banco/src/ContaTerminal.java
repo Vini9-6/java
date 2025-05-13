@@ -1,18 +1,19 @@
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
 public class ContaTerminal {
-    private String agencia;
+    private int  agencia;
     private int numeroConta;
     private String nomeCliente;
     private Double saldo = 0.0;
 
     // getters e setters
-    public String getAgencia() {
+    public int getAgencia() {
         return agencia;
     }
 
-    public void setAgencia(String agencia) {
+    public void setAgencia(int agencia) {
         this.agencia = agencia;
     }
 
@@ -41,16 +42,22 @@ public class ContaTerminal {
     }
 
     public static void main(String[] args) throws Exception {
+        
         ContaTerminal conta = new ContaTerminal(); // instancia da classe
         Scanner scanner = new Scanner(System.in); // instancia do Scanner
         Random random = new Random(); // instancia do random
 
+        try {
         System.out.println("Olá, seja bem vindo ao Banco Uni");
         System.out.println("Para criar uma conta digite seu nome: ");
         conta.setNomeCliente(scanner.next()); // atribuir o nome ao atributo usando o setter
 
         System.out.println("Digite o número da agência (xxx-x): ");
-        conta.setAgencia(scanner.next()); // atribuir a agencia ao atributo usando o setter
+        conta.setAgencia(scanner.nextInt()); // atribuir a agencia ao atributo usando o setter
+                }
+        catch(InputMismatchException e){ // tratamento de excecao
+            System.out.println("Os campos agência e número da conta precisam ser numéricos!");
+        }
 
         // gera numero de conta aleatorio de 4 digitos
         conta.setNumeroConta(1000 + random.nextInt(9000));
@@ -62,6 +69,7 @@ public class ContaTerminal {
         System.out.println("Seu saldo é: " + conta.getSaldo());
 
         scanner.close(); // fechar o Scanner
+
     }
 
 
