@@ -16,7 +16,7 @@ java-basico/
 ├── sistema-smart-tv/  
 ├── boletim-estudantil/  
 ├── controle-candidatos/  
-└── .gitignore  
+├── .gitignore  
 └── README.md  
 
 ## 📚 Tópicos estudados
