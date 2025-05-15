@@ -10,12 +10,14 @@ Este repositório reúne códigos e anotações desenvolvidos durante meus estud
 
 ## 📁 Projetos:
 
-java-basico/
-├── desafio-controle-fluxo/
-├── conta-banco/
-├── sistema-smart-tv/
-├── boletim-estudantil/
-└── README.md
+java-basico/  
+├── desafio-controle-fluxo/  
+├── conta-banco/  
+├── sistema-smart-tv/  
+├── boletim-estudantil/  
+├── controle-candidatos/  
+└── .gitignore  
+└── README.md  
 
 ## 📚 Tópicos estudados
 
