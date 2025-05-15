@@ -21,6 +21,15 @@ public class ProcessoSeletivo {
                 System.out.println("Contato com o candidato " + candidato + " realizado!");
             }
         } while (continuarTentando && tentativas<=3);     
+
+        if(atendido){
+            System.out.println("O candidato " + candidato + " atendeu a ligacao!");
+            double valorPretendido = valorPretendido();
+            analisarCandidato(valorPretendido);
+        } else {
+            System.out.println("O candidato " + candidato + " nao atendeu a ligacao.");
+        }
+
     }
 
     static boolean atender(){
@@ -63,7 +72,7 @@ public class ProcessoSeletivo {
         double salarioBase = 2000;
 
         if (salarioBase>valorPretendido)
-        System.out.println("Ligue para o candidato!");
+        System.out.println("Candidato contratado!");
         else if(salarioBase==valorPretendido)
         System.out.println("Envie contraproposta!");
         else
