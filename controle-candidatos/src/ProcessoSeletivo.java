@@ -70,6 +70,7 @@ public class ProcessoSeletivo {
 
     static void analisarCandidato(double valorPretendido){
         double salarioBase = 2000;
+        
 
         if (salarioBase>valorPretendido)
         System.out.println("Candidato contratado!");
