@@ -1,8 +1,30 @@
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo {
     public static void main(String[] args) throws Exception {
         System.out.println("Processo Seletivo!");
         selecaoCandidato();
+
+    }
+
+    static void entrandoEmContato(String candidato){
+        int tentativas = 1;
+        boolean continuarTentando = true;
+        boolean atendido = false;
+        do { 
+            atendido = atender();
+            continuarTentando = !atendido;
+            if (continuarTentando) {
+                System.out.println("Tentativa " + tentativas + " de contato com o candidato " + candidato);
+                tentativas++;
+            } else {
+                System.out.println("Contato com o candidato " + candidato + " realizado!");
+            }
+        } while (continuarTentando && tentativas<=3);     
+    }
+
+    static boolean atender(){
+        return new Random().nextInt(3)==1;
     }
 
     
@@ -29,6 +51,7 @@ public class ProcessoSeletivo {
         System.out.println("\nCandidatos selecionados:");
         for (int i = 0; i < candidatosSelecionados; i++) {
             System.out.println(selecionados[i]);
+            entrandoEmContato(selecionados[i]);
         }
     }   
 
@@ -36,12 +59,12 @@ public class ProcessoSeletivo {
         return ThreadLocalRandom.current().nextDouble(1500, 2200);
     }
 
-    static void analisarCandidato(double salarioPretendido){
+    static void analisarCandidato(double valorPretendido){
         double salarioBase = 2000;
 
-        if (salarioBase>salarioPretendido)
+        if (salarioBase>valorPretendido)
         System.out.println("Ligue para o candidato!");
-        else if(salarioBase==salarioPretendido)
+        else if(salarioBase==valorPretendido)
         System.out.println("Envie contraproposta!");
         else
         System.out.println("Aguarde os demais candidatos.");
