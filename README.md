@@ -4,11 +4,11 @@ Este repositório contém explicações e exemplos que estou **desenvolvendo** d
 
 ## 🚀 Tecnologias utilizadas
 
-- Java SE (Standard Edition)
-- IntelliJ IDEA / Eclipse (ou outra IDE à sua escolha)
-- JDK 8 ou superior
+- Java
+- Visual Studio Code
+- JDK 17
 
-## 📂 Estrutura do Projeto
+## 📂 Projetos
 
 ```
 java-basico/
@@ -17,7 +17,7 @@ java-basico/
 │   ├── Condicionais.java
 │   ├── BoletimEstudantil.java
 │   ├── Metodos.java
-│   └── ...
+│   └── DesafioControledeFluxo
 ├── .gitignore
 └── README.md
 ```
