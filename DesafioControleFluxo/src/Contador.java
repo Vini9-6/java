@@ -26,5 +26,18 @@ public class Contador {
         scanner.close();
     }
 
+    static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+        // se o primeiro for maior ou igual que o segundo, vai da erro
+        if (parametroUm >= parametroDois) {
+            throw new ParametrosInvalidosException("o segundo parametro deve ser maior que o primeiro");
+        }
 
+        // calcula quantas vezes vai repetir
+        int contagem = parametroDois - parametroUm;
+
+        // repete de 1 ate o valor da contagem
+        for (int i = 1; i <= contagem; i++) {
+            System.out.println("imprimindo o numero " + i);
+        }
+    }
 }
