@@ -8,16 +8,13 @@ Este repositório reúne códigos e anotações desenvolvidos durante meus estud
 - Visual Studio Code  
 - Terminal (para compilar e executar os arquivos)
 
-## 📁 Estrutura do projeto
+## 📁 Projetos:
 
 java-basico/
-├── src/
-│   ├── Operadores.java
-│   ├── Condicionais.java
-│   ├── BoletimEstudantil.java
-│   ├── Metodos.java
-│   └── DesafioControledeFluxo/
-├── .gitignore
+├── desafio-controle-fluxo/
+├── conta-banco/
+├── sistema-smart-tv/
+├── boletim-estudantil/
 └── README.md
 
 ## 📚 Tópicos estudados
