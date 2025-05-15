@@ -1,49 +1,42 @@
-# Java Básico
+# ☕ Java Básico
 
-Este repositório contém explicações e exemplos que estou **desenvolvendo** durante meus estudos de programação em Java. O objetivo é consolidar os principais conceitos da linguagem de forma prática, organizada e didática.
+Este repositório reúne códigos e anotações desenvolvidos durante meus estudos em Java. A proposta é fixar os conceitos fundamentais da linguagem por meio de exemplos simples e práticos.
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias
 
-- Java
-- Visual Studio Code
-- JDK 17
+- Java 17  
+- Visual Studio Code  
+- Terminal (para compilar e executar os arquivos)
 
-## 📂 Projetos
+## 📁 Estrutura do projeto
 
-```
 java-basico/
 ├── src/
 │   ├── Operadores.java
 │   ├── Condicionais.java
 │   ├── BoletimEstudantil.java
 │   ├── Metodos.java
-│   └── DesafioControledeFluxo
+│   └── DesafioControledeFluxo/
 ├── .gitignore
 └── README.md
-```
 
-## 📘 Conteúdo abordado
+## 📚 Tópicos estudados
 
 - Sintaxe básica
-- Variáveis e tipos primitivos
-- Operadores aritméticos e lógicos
-- Estruturas de controle (`if`, `else`, `switch`)
-- Laços de repetição (`for`, `while`, `do-while`)
+- Tipos primitivos e variáveis
+- Operadores (aritméticos, relacionais e lógicos)
+- Estruturas de decisão (if, else, switch)
+- Estruturas de repetição (for, while, do-while)
 - Métodos e escopo
-- Introdução à orientação a objetos (POO)
+- Noções iniciais de Programação Orientada a Objetos (POO)
 
-## 🛠️ Como executar
+## ▶️ Como executar
 
-1. Clone o repositório:
-   ```bash
+1. Clone este repositório:
    git clone https://github.com/Vini9-6/java-basico.git
-   ```
 
-2. Abra o projeto em sua IDE de preferência.
+2. Abra a pasta do projeto em sua IDE de preferência (ex: VS Code ou IntelliJ)
 
-3. Compile e execute os arquivos `.java` diretamente pela IDE ou via terminal:
-   ```bash
+3. Compile e execute os arquivos .java diretamente na IDE ou pelo terminal:
    javac NomeDoArquivo.java
    java NomeDoArquivo
-   ```
-
