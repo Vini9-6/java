@@ -73,3 +73,59 @@ public class Matriz5x5 {
         op.exibirResultados();
     }
 }
+
+/*
+ * 
+ * import java.util.Scanner;
+public class Matriz
+{
+    int[][] m;
+    int somaC;
+    int somaL;
+    
+	public static void main(String[] args) {
+	    Matriz m1 = new Matriz();
+	    
+	    m1.setMatriz();
+		m1.somaColuna();
+		m1.somaLinha();
+		m1.getResultados();
+	}
+	Matriz(){
+	    m= new int[5][5];
+	    this.somaL = somaL;
+	    this.somaC = somaC;
+	}
+	
+	void setMatriz(){
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("digite os elementos da Matriz: ");
+	    for(int i=0; i<5; i++){
+	        for(int j=0; j<5; j++){
+	            m[i][j] = sc.nextInt();
+	        }
+	    }
+	}
+	
+	void somaColuna(){
+	    for(int i = 0; i < 5; i++){
+	        somaC = 0;
+	        somaC += m[i][1];
+	    }
+	}
+	
+	void somaLinha(){
+	    for(int j = 0; j < 5; j++){
+	        somaL = 0;
+	        somaL += m[2][j];
+	    }
+	}
+	
+	void getResultados(){
+	    System.out.println("A soma dos elementos da coluna 2: "+ somaC);
+	    System.out.println("A soma dos elementos da linha 3: "+ somaL);
+	}
+}
+
+ * 
+ */
