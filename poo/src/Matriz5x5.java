@@ -46,7 +46,7 @@ public class Matriz5x5 {
         }
     }
 
-    public void lerMatriz() {
+    public void setMatriz() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite os elementos da matriz M 5x5:");
         for (int i = 0; i < 5; i++) {
@@ -57,7 +57,7 @@ public class Matriz5x5 {
         }
     }
 
-    public void exibirResultados() {
+    public void getResultados() {
         System.out.println("\nResultados:");
         System.out.println("a) Soma da linha 3 de M: " + somaLinha3);
         System.out.println("b) Soma da coluna 2 de M: " + somaColuna2);
@@ -68,9 +68,9 @@ public class Matriz5x5 {
 
     public static void main(String[] args) {
         Matriz5x5 op = new Matriz5x5();
-        op.lerMatriz();
+        op.setMatriz();
         op.calcularOperacoes();
-        op.exibirResultados();
+        op.getResultados();
     }
 }
 
